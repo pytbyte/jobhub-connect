@@ -25,6 +25,7 @@ Job Connect is a web application designed to connect job seekers with potential 
 * Redis (for caching)
 * JWT (for authentication)
 * RESTful API architecture
+'''
 +-- bin // Custom tasks
 +-- dist // Source build
 +-- public // Static Files
@@ -61,7 +62,7 @@ Job Connect is a web application designed to connect job seekers with potential 
 |   +-- greeter.module.ts
 |   +-- greeter.*.ts
 |   +-- index.ts
-
+'''
 # Setup Instructions
 
 ## Backend (Flask API)
