@@ -25,33 +25,42 @@ Job Connect is a web application designed to connect job seekers with potential 
 * Redis (for caching)
 * JWT (for authentication)
 * RESTful API architecture
-''' 
-### Project Structure
-job-connect/
-|-- backend/
-|   |-- app.py
-|   |-- models.py
-|   |-- controllers/
-|   |-- utils/
-|   |-- tests/
-|   |-- requirements.txt
-|   +-- .env.example
-|
-+-- frontend/
-    |-- public/
-    |-- src/
-    |   |-- components/
-    |   |-- containers/
-    |   |-- actions/
-    |   |-- reducers/
-    |   |-- services/
-    |   |-- App.js
-    |   |-- index.js
-    |   +-- ...
-    |-- package.json
-    |-- package-lock.json
-    +-- README.md
-'''
++-- bin // Custom tasks
++-- dist // Source build
++-- public // Static Files
++-- src
+|   +-- config // Environment Configuration
+|   +-- entity // TypeORM Entities
+|   +-- auth // Authentication
+|   +-- common // Global Nest Module
+|   |   +-- constants // Constant value and Enum
+|   |   +-- controllers // Nest Controllers
+|   |   +-- decorators // Nest Decorators
+|   |   +-- dto // DTO (Data Transfer Object) Schema, Validation
+|   |   +-- filters // Nest Filters
+|   |   +-- guards // Nest Guards
+|   |   +-- interceptors // Nest Interceptors
+|   |   +-- interfaces // TypeScript Interfaces
+|   |   +-- middleware // Nest Middleware
+|   |   +-- pipes // Nest Pipes
+|   |   +-- providers // Nest Providers
+|   |   +-- * // models, repositories, services...
+|   +-- shared // Shared Nest Modules
+|   +-- gql // GraphQL Structure
+|   +-- * // Other Nest Modules, non-global, same as common structure above
++-- test // Jest testing
++-- typings // Modules and global type definitions
+
+// Module structure
+// Add folders according to module scale. If it's small, you don't need to add folders.
++-- src/greeter
+|   +-- * // folders
+|   +-- greeter.constant.ts
+|   +-- greeter.controller.ts
+|   +-- greeter.service.ts
+|   +-- greeter.module.ts
+|   +-- greeter.*.ts
+|   +-- index.ts
 
 # Setup Instructions
 
