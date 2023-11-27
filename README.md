@@ -28,7 +28,7 @@ Job Connect is a web application designed to connect job seekers with potential 
 
 # Project Structure
 
-
+'''
 job-connect/
 │
 ├── backend/
@@ -54,7 +54,7 @@ job-connect/
     ├── package.json
     ├── package-lock.json
     └── README.md
-
+'''
 # Setup Instructions
 
 ## Backend (Flask API)
