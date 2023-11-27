@@ -31,16 +31,16 @@ Job Connect is a web application designed to connect job seekers with potential 
 ## Project Structure
 
 job-connect/
-* backend/
+# backend/
  * app.py
  * models.py
  * controllers/
  * utils/
  * tests/
  * requirements.txt
- +-- .env.example
+ * .env
 
-+-- frontend/
+# frontend/
 * public/
 * src/
  * components/
@@ -50,10 +50,10 @@ job-connect/
  * services/
  * App.js
  * index.js
- +-- ...
+ 
 * package.json
 * package-lock.json
-+-- README.md
+# README.md
 
 
 
