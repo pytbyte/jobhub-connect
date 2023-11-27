@@ -1,0 +1,17 @@
+# auth_service/models.py
+
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
+
+# User model for MySQL database
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(50), unique=True, nullable=False)
+    password = db.Column(db.String(100), nullable=False)
+    # Add more user-related fields as needed
+
+    def __repr__(self):
+        return f'<User {self.username}>'
+
+# Implement Redis caching setup and usage as needed

@@ -13,6 +13,32 @@ Job Connect is a web application designed to connect job seekers with potential 
 
 ## Tech Stack
 
+### Backend Microservices:
+
+#### Auth Service:
+
+- Flask (Python)
+- SQLAlchemy (for database ORM)
+- JWT (for authentication)
+
+#### Job Service:
+
+- Flask (Python)
+- SQLAlchemy (for database ORM)
+- Redis (for caching)
+
+#### Application Service:
+
+- Flask (Python)
+- SQLAlchemy (for database ORM)
+- Redis (for caching)
+
+#### Employer Service:
+
+- Flask (Python)
+- SQLAlchemy (for database ORM)
+- Redis (for caching)
+
 ### Frontend:
 
 - React
@@ -20,55 +46,57 @@ Job Connect is a web application designed to connect job seekers with potential 
 - Axios (for API interactions)
 - React Router (for routing)
 
-### Backend:
-
-- Flask (Python)
-- SQLAlchemy (for database ORM)
-- Redis (for caching)
-- JWT (for authentication)
-- RESTful API architecture
-
 ## Project Structure
-
 ```
 job-connect/
-\ backend/
-| |-- app.py
-| |-- models.py
-| |-- controllers/
-| |-- utils/
-| |-- tests/
-| |-- requirements.txt
-| +-- .env.example
+|-- backend/
+| |-- auth_service/
+| | |-- app.py
+| | |-- config.py
+| | +-- ...
+| |
+| |-- job_service/
+| | |-- app.py
+| | |-- config.py
+| | +-- ...
+| |
+| |-- application_service/
+| | |-- app.py
+| | |-- config.py
+| | +-- ...
+| |
+| |-- employer_service/
+| | |-- app.py
+| | |-- config.py
+| | +-- ...
+| |
+| +-- redis/
+| | |-- redis.conf
+| | +-- ...
+| |
+| +-- mysql/
+| | |-- job_db.sql
+| | +-- ...
 |
 +-- frontend/
-|-- public/
-|-- src/
-| |-- components/
-| |-- containers/
-| |-- actions/
-| |-- reducers/
-| |-- services/
-| |-- App.js
-| |-- index.js
-| +-- ...
-|-- package.json
-|-- package-lock.json
+| |-- public/
+| |-- src/
+| | +-- ...
+|
 +-- README.md
+
 ```
-
-
 
 ## Setup Instructions
 
-### Backend (Flask API)
+### Backend Microservices
 
 1. Clone the repository.
-2. Navigate to the backend directory.
-3. Create and activate a virtual environment.
-4. Install dependencies from requirements.txt.
-5. Configure environment variables in .env file.
-6. Run the Flask server (`python app.py`).
+2. Navigate to each microservice directory (auth_service, job_service, application_service, employer_service).
+3. Create and activate a virtual environment for each microservice.
+4. Install dependencies from their respective requirements.txt.
+5. Configure environment variables in their respective .env files.
+6. Run each service individually (`python app.py` within each microservice directory).
 
 ### Frontend (React)
 
@@ -78,10 +106,10 @@ job-connect/
 
 ## Usage
 
-### Backend API
+### Backend Microservices
 
-- Access the API endpoints at [http://localhost:5000](http://localhost:5000).
-- Use tools like Postman to interact with the API.
+- Access the API endpoints of each microservice as needed.
+- Utilize tools like Postman for interaction with each microservice's API.
 
 ### Frontend
 
