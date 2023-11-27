@@ -64,11 +64,13 @@ job-connect/
 * Configure environment variables in .env file.
 * Run the Flask server (python app.py).
 
-# Frontend (React)
+
+## Frontend (React)
 
 * Navigate to the frontend directory.
 * Install dependencies (npm install).
 * Start the development server (npm start).
+
 
 ## Usage
 
